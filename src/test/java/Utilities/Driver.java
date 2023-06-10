@@ -11,7 +11,7 @@ public class Driver {
 
 
     private static WebDriver driver;
-    private static  String browserType = "chrome";
+    private static  String browserType = Config.getValue("browser");
 
     public static WebDriver getDriver(){
 
