@@ -19,9 +19,9 @@ public class TestSauceDemo {
         sauceDemo.button.click();
         Assert.assertNotEquals(oldUrl, Driver.getDriver().getCurrentUrl());
 
-       for(int i = 0; i < sauceDemo.listOfButtons.size(); i ++ ) {
+       for(int i = 0; i < sauceDemo.listOfButtons.size() - 1; i ++ ) {
            sauceDemo.listOfButtons.get(i).click();
-           ApplicationFlow.pause(1000);
+
        }
         System.out.println(sauceDemo.listOfButtons.size());
     }

@@ -20,6 +20,6 @@ public class SauceDemo {
     @FindBy(id = "login-button")
     public WebElement button;
 
-    @FindBy(xpath = "//button[contains(text(),'Add to cart')]")
+    @FindBy(xpath= "//button[@class='btn btn_primary btn_small btn_inventory']")
     public List<WebElement> listOfButtons;
 }
